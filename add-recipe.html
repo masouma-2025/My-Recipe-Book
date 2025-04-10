@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore delicious recipes, from appetizers to desserts, in My Recipe Book. Learn how to cook like a pro and share your favorite dishes with others!">
+    <meta name="keywords" content="recipes, cooking, Afghan food,appetizers, main courses, desserts, food blog, cooking instructions, traditional recipes, easy recipes">
+    <meta name="author" content="Masouma Najafi">
+    <title>Recipe Website</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #fff8f0;
+          padding: 30px;
+        }
+
+        h1 {
+          color: #e60000;
+          text-align: center;
+        }
+
+        form {
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 12px;
+          max-width: 500px;
+          margin: auto;
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+          display: block;
+          margin-top: 15px;
+          font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="url"],
+        textarea,
+        select {
+          width: 100%;
+          padding: 10px;
+          margin-top: 5px;
+          border-radius: 8px;
+          border: 1px solid #ccc;
+          font-size: 14px;
+        }
+
+        input[type="submit"] {
+          margin-top: 20px;
+          background-color: #e60000;
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          font-size: 16px;
+          border-radius: 8px;
+          cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+          background-color: #cc0000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav style="background-color:#e60000; position: fixed; top: 0; left: 0; padding: 5px; width: 100% ;">
+         <ul type="none">
+             <li style="display: inline; font-size:25px;"><a style="text-decoration: none; color: white;" href="index.html">Home</a></li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+             <li style="display: inline; font-size: 25px;"><a style="text-decoration: none; color: white;" href="add-recipe.html"> Add Recipe</a></li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+             <li style="display: inline; font-size: 25px;"><a style="text-decoration: none; color:white;" href="recipe-list.html">Recipe List</a></li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+         </ul>
+        </nav>
+     </header>
+    <main style="margin-top: 100px;">
+        <h1>share a New Recipe with Your Friends</h1>
+        <p style="text-align: center; font-size: large">Use this form to share your favorite recipes with friends around the world. Your dish will be published under your name and country, allowing food lovers everywhere to discover and enjoy it. We’re excited to see what delicious creations you’ll share!</p>
+        <form action="#" method="post">
+            <label for="Y">Your name:</label><br>
+            <input type="text" name="yourname" id="Y" placeholder="Full Name" required><br>
+            <label for="Co">Country:</label><br>
+            <select name="country" id="Co" required>
+                <option value="Choose">Choose</option>
+                <option value="Afghanistan">Afghanistan</option>
+                <option value="Iran">Iran</option>
+                <option value="India">India</option>
+                <option value="US">US</option>
+                <option value="London">London</option>
+             </select><br>   
+            <label for="N">Recipe Name:</label><br>
+            <input type="text" name="recipeName" id="N" placeholder="Ex: Qabili Plaw, Biryani" required><br> 
+            <label for="W">What ingredients do you use?</label><br>
+            <textarea name="ingredients" id="W" rows="5" placeholder="Ex: water, oil, spices"></textarea><br>
+            <label for="H">How do you prepare it? 😊</label><br>
+            <textarea name="makeSteps" id="H" rows="5" placeholder="Ex: First you should..."></textarea><br>
+            <label for="L">Link to an image of your dish (optional):</label><br>  
+            <input type="url" name="imageURL" id="L" placeholder="Image URL"><br>
+            <label for="C">Recipe Category:</label><br>   
+            <select name="category" id="C" required>
+                <option value="Choose">Choose</option>
+                <option value="Desserts">Desserts</option>
+                <option value="Main Courses">Main Courses</option>
+                <option value="Appetizers">Appetizers</option>
+                <option value="Snacks">Snacks</option>
+                <option value="Vegan">Vegan</option>
+            </select><br> 
+            <input type="submit" value="Add your Recipe">
+        </form>
+    </main>
+    <footer style="background-color:#e60000; text-align: center; padding: 10px;">
+        <a href="https://x.com/masouma_n?t=FCoXxD9T-8lyjRrSx1689w&s=03" style="color:white; font-size: 18px;">&copy;2025 Created by Maouma Najafi</a>
+    </footer>
+</body>
+</html>

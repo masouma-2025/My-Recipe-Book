@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore delicious recipes, from appetizers to desserts, in My Recipe Book. Learn how to cook like a pro and share your favorite dishes with others!">
+    <meta name="keywords" content="recipes, cooking, Afghan food,appetizers, main courses, desserts, food blog, cooking instructions, traditional recipes, easy recipes">
+    <meta name="author" content="Masouma Najafi">
+    <title>recipe web site</title>
+    <style>
+        form {
+            text-align: center;
+            margin-top: 50px;
+        }
+    
+        label {
+            font-size: 20px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+    
+        select {
+    width: 250px;        
+    height: 20px;        
+    font-size: 14px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+    
+        select:hover {
+            border-color: #888;
+        }
+    
+        option {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+       <nav style="background-color:#e60000; position: fixed; top: 0; left: 0; padding: 5px; width: 100% ;">
+        <ul type="none">
+            <li style="display: inline; font-size:25px;"><a style="text-decoration: none; color: white;" href="index.html">Home</a></li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <li style="display: inline; font-size: 25px;"><a style="text-decoration: none; color: white;" href="add-recipe.html"> Add recipe</a></li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <li style="display: inline; font-size: 25px;"><a style="text-decoration: none; color:white;" href="recipe-list.html">Recipe list</a></li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        </ul>
+       </nav>
+    </header>
+    <main style="margin-top: 100px;">
+        <!--This list change each weak.-->
+        <h1 style="text-align: center;">
+            List of This Week's Recipes
+        </h1>
+        <form action="new.html" method="post">
+            <label for="rl">Sort by categoty</label>
+            <select name="recipe_list" id="rl"> 
+                <option value="Choose">Choose</option>
+                <option value="Appetizers" >Appetizers</option>
+                <option  value="Main Courses">Main Courses</option>
+                <option value="Desserts">Desserts </option>
+                <option value="snacks">snacks</option>
+                <option value="Drinks">Drinks</option>
+            </select>
+        </form>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <table  cellspacing="35">
+            <tr>
+                <th> Sushi Rice</th>
+                <th> Lagman Soup </th>
+                <th>Trifle</th>
+            </tr>
+            <tr>
+                <td><img src="https://shorturl.at/1xfpX" width="300" height="200" alt="Sushi"></td>
+                <td><img src="https://shorturl.at/1a8rM"  width="300" height="200" alt="Lagman soup"></td>
+                <td><img src="https://shorturl.at/Uzeun"  width="300" height="200" alt="Trifle"></td>
+            </tr>
+            <tr>
+                <td>
+                    Sushi is an essential part of Japanese dishes and comes in many varieties.
+                    Different areas of Japan offer their own take on this popular dish, based on the availability and variety of regional ingredients.
+                </td>
+                <td>
+                    Lagman is a hearty soup full of different nutritious vegetables, served with noodles and aromatic broth.
+                     It is one of the traditional dishes of Uzbekistan but also popular in some other central Asian countries like Kyrgyzstan, Kazakhstan, and Turkmenistan. 
+                </td>
+                <td>
+                    A trifle is a classic Southern dessert, especially around the holidays.
+                    It's a gorgeous layered dessert that's surprisingly easy to make.
+                </td>
+            </tr>
+            <tr>
+
+                <td><a href="recipe-details.html"><input type="button" name="recipe" value="Get This Recipe"></a></td>
+                <td><a href="recipe-details.html"><input type="button" name="recipe" value="Get This Recipe"></a></td>
+                <td><a href="recipe-details.html"><input type="button" name="recipe" value="Get This Recipe"></a></td>
+            </tr>
+            <tr>
+                <th>Hungarian Fisherman’s Soup</th>
+                <th>German Potato Dumplings (Kartoffelkloesse) </th>
+                <th>Mojito</th>
+            </tr>
+            <tr>
+                <td><img src="https://shorturl.at/AfSn0" width="300" height="200" alt="Hungarian fishers soup"></td>
+                <td><img src="https://shorturl.at/5CwJV"  width="300" height="200" alt="German potato bunplings"></td>
+                <td><img src="https://shorturl.at/SjAdB"  width="300" height="200" alt="Mojito"></td>
+            </tr>
+            <tr>
+                <td>
+                    If you ever travel to Hungary, do not forget to try the popular Hungarian Fisherman’s soup (Halászlé!) It is one of the most famous Hungarian appetizers.
+                     It is made from freshwater fish, red pepper, and tomatoes.
+                     To make this soup, stay with Cooking County.
+                <td>
+                    Kartoffelklöße (also known as German Potato Dumplings) are a traditional German side dish made from potatoes, often served with hearty meat dishes like Sauerbraten (German pot roast).
+                </td>
+                <td>
+                    A mojito is a classic Cuban cocktail that's refreshing, minty, and slightly sweet — perfect for hot weather! 🍃🍹
+                </td>
+            </tr>
+            <tr>
+                <td><a href="recipe-details.html"><input type="button" name="recipe" value="Get This Recipe"></a></td>
+                <td><a href="recipe-details.html"><input type="button" name="recipe" value="Get This Recipe"></a></td>
+                <td><a href="recipe-details.html"><input type="button" name="recipe" value="Get This Recipe"></a></td>   
+            </tr>
+
+        </table>
+           
+    </main>
+    <footer style="background-color:#e60000; text-align: center; padding: 10px;">
+        <a href="https://x.com/masouma_n?t=FCoXxD9T-8lyjRrSx1689w&s=03" style="color:white; font-size: 18px;" > &copy;2025 Created by Maouma Najafi </a>
+    </footer>
+</body>
+</html>
